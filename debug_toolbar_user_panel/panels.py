@@ -60,12 +60,12 @@ from django.utils.translation import ugettext_lazy as _
 
 from django.contrib.auth import get_user_model
 
-from debug_toolbar.panels import DebugPanel
+from debug_toolbar.panels import Panel
 
 from . import views
 from .forms import UserForm
 
-class UserPanel(DebugPanel):
+class UserPanel(Panel):
     """
     Panel that allows you to login as other recently-logged in users.
     """
